@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-bgBackgrund p-6 font-Rubik overflow-hidden">
+    <main>
+      <nav
+        class="w-full h-[15%] bg-bgPrimary rounded-2xl flex justify-between items-center gap-5 p-5"
+      >
+      <ul class="flex justify-between items-center gap-5 w-full">
+        <li>Logo</li>
+        <li
+          class="search bg-bgSecoundary w-[200px] h-10 rounded-lg flex justify-center items-center"
+        >
+         <input type="text" class="bg-transparent placeholder:text-black outline-none focus:border-none" id="searchBox" placeholder="search ...">
+        </li>
+        <li>Found 20 characters</li>
+        <li><i class="fas fa-heart text-2xl text-red-600"></i></li>
+        </ul>
+      </nav>
+      <br>
+      <section class="h-[80vh] flex justify-between items-center gap-2">
+     
+     <div class="characterList flex justify-between items-center flex-col gap-5 w-[40%] h-full overflow-y-scroll"></div>
+
+      <div class="loader-container">
+        <div class="spinner"></div>
+      </div>
+      <div class="rightBar flex justify-between items-center flex-col gap-2 w-[60%] h-full">
+        <div class="characterInfo w-full h-[33vh] bg-bgPrimary rounded-xl flex justify-between items-center">
+            <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="" class="w-[40%] h-full rounded-xl">
+            <div class="info flex flex-col justify-between items-start pl-2 mr-48 gap-3">
+                <span>Alive Human</span>
+                <span>Last known location :</span>
+                <span>Citadel of ricks</span>
+                <span>this character already is in your favourites</span>
+                <button class="bg-highLighted w-[150px] h-[40px] rounded-lg">Add To Favourite</button>
+            </div>
+        </div>
+        <div class="list w-full h-[47vh] bg-bgPrimary rounded-xl overflow-y-scroll p-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptates inventore consectetur autem, sequi ducimus? Atque non dolores quisquam asperiores eos minima, ipsum commodi, neque doloribus, odio eaque dolore architecto?
+          Sint quae nihil cupiditate repudiandae earum harum maxime a ipsam aliquam vitae maiores neque doloremque, enim tempora fugit. Est, accusantium. Et expedita sunt incidunt sint magni temporibus, praesentium libero nihil.
+          Commodi similique, mollitia fuga nulla, corrupti ipsa assumenda accusamus inventore minus repudiandae consectetur dignissimos earum iure ipsam nihil a odit repellat rem. Obcaecati facere nam cum magnam perferendis animi et?
+          Veritatis nam reprehenderit sunt minima dicta commodi, maxime eaque, eius corrupti hic et adipisci earum nobis ratione velit in beatae voluptatum voluptatem soluta! Minima et ullam recusandae, impedit illo dolores.
+          Odit aspernatur veniam cumque id. Atque exercitationem distinctio similique odit dolore? Laudantium, labore. Necessitatibus pariatur commodi accusamus, facilis voluptas quas, id tenetur, ea vitae saepe similique fugit natus. Incidunt, mollitia.
+          Magni provident fuga maxime. Nostrum qui nobis laudantium modi illum corrupti laboriosam quisquam neque autem. Iure mollitia voluptas sit recusandae tenetur, neque dolore enim ducimus quo impedit ipsam, atque libero.
+          Amet nesciunt nihil minima minus fugit neque harum velit rerum eveniet corrupti sequi facilis quia, obcaecati, ipsa assumenda dolorem perferendis, beatae dolor temporibus repellat? Asperiores dolorem earum quo cumque quos?
+          Eius, totam eaque ipsam alias amet ducimus reiciendis minima odit perferendis voluptate enim ut non debitis beatae laudantium dolores similique dolorum voluptates consequatur. Iusto, totam! Sit quasi error excepturi nemo!
+          Reprehenderit minus nam perspiciatis, architecto ad ipsam cupiditate nesciunt quia ratione aliquid sint a qui eum iure repellendus, voluptatem sed. Rem veritatis consequatur quisquam sunt hic optio laborum. Totam, nemo!
+          Iure nulla eligendi reprehenderit excepturi commodi ex incidunt sed quod delectus perferendis aut repellat, rem cupiditate ut distinctio assumenda maxime aliquam, at corrupti molestiae! Cupiditate neque voluptas ducimus odio culpa.
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
